@@ -19,7 +19,7 @@
 
 ```typescript
 const vladyslav = {
-  code: ["TypeScript", "JavaScript", "Solidity", "Python"],
+  code: ["TypeScript", "JavaScript", "Solidity", "Go"],
   technologies: {
     backend: ["Node.js", "NestJS", "Express", "GraphQL"],
     frontend: ["React", "Next.js", "Vue.js", "Nuxt"],
@@ -109,6 +109,7 @@ const vladyslav = {
 <div align="center">
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': { 'primaryColor': '#ffffff', 'primaryTextColor': '#ffffff', 'primaryBorderColor': '#ffffff', 'lineColor': '#ffffff', 'sectionBkgColor': '#1a1a1a', 'altSectionBkgColor': '#2a2a2a', 'gridColor': '#ffffff', 'textColor': '#ffffff', 'secondaryColor': '#ffffff', 'tertiaryColor': '#ffffff', 'background': '#0d1117', 'secondaryTextColor': '#ffffff'}}}%%
 mindmap
   root((Vladyslav))
     DeFi Protocols
@@ -122,7 +123,6 @@ mindmap
     Blockchain Tech
       Web3 Integration
       Cross-chain Bridges
-      Security Audits
     Mentoring
       Junior Developers
       Code Reviews
@@ -202,15 +202,6 @@ mindmap
 
 ---
 
-### 🎯 2024 Goals
-
-- [ ] Contribute to 5+ open source blockchain projects
-- [ ] Build innovative DeFi protocols
-- [ ] Mentor more developers in Web3 space
-- [ ] Explore ZK-proofs and Layer 2 solutions
-- [ ] Write technical articles about blockchain development
-
----
 
 <!-- GitHub Metrics -->
 <div align="center">
