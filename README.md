@@ -109,7 +109,7 @@ const vladyslav = {
 <div align="center">
 
 ```mermaid
-%%{init: {'theme':'base', 'themeVariables': { 'primaryColor': '#ffffff', 'primaryTextColor': '#ffffff', 'primaryBorderColor': '#ffffff', 'lineColor': '#ffffff', 'sectionBkgColor': '#1a1a1a', 'altSectionBkgColor': '#2a2a2a', 'gridColor': '#ffffff', 'textColor': '#ffffff', 'secondaryColor': '#ffffff', 'tertiaryColor': '#ffffff', 'background': '#0d1117', 'secondaryTextColor': '#ffffff'}}}%%
+%%{init: {'theme':'base', 'themeVariables': { 'primaryColor': '#58a6ff', 'primaryTextColor': '#ffffff', 'primaryBorderColor': '#30363d', 'lineColor': '#58a6ff', 'sectionBkgColor': '#21262d', 'altSectionBkgColor': '#30363d', 'gridColor': '#58a6ff', 'textColor': '#ffffff', 'secondaryColor': '#238636', 'tertiaryColor': '#f85149', 'background': '#0d1117', 'secondaryTextColor': '#ffffff', 'mainBkg': '#21262d', 'secondBkg': '#30363d', 'tertiaryBkg': '#161b22'}}}%%
 mindmap
   root((Vladyslav))
     DeFi Protocols
