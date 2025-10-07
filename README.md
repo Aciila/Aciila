@@ -58,27 +58,6 @@ const vladyslav = {
 
 ---
 
-## 📊 GitHub Statistics
-
-<div align="center">
-  
-  <!-- GitHub Stats Card -->
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=Aciila&show_icons=true&theme=radical&include_all_commits=true&count_private=true&hide_border=true"/>
-  
-  <!-- Most Used Languages -->
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Aciila&layout=compact&theme=radical&hide_border=true"/>
-
-</div>
-
-<div align="center">
-
-  <!-- Streak Stats -->
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=Aciila&theme=radical&hide_border=true&date_format=M%20j%5B%2C%20Y%5D" />
-
-</div>
-
----
-
 ## 🐍 Contribution Snake Animation
 
 <div align="center">
@@ -187,21 +166,6 @@ mindmap
 <br clear="right"/>
 
 ---
-
-<details>
-<summary>📊 Detailed Statistics</summary>
-<br>
-
-<!-- Detailed GitHub Stats -->
-<img src="https://github-readme-stats.vercel.app/api?username=Aciila&show_icons=true&theme=radical&include_all_commits=true&count_private=true" />
-
-<!-- Contribution Stats -->
-<img src="https://github-contributor-stats.vercel.app/api?username=Aciila&limit=5&theme=radical&combine_all_yearly_contributions=true" />
-
-</details>
-
----
-
 
 <!-- GitHub Metrics -->
 <div align="center">
