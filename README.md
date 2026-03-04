@@ -29,95 +29,47 @@ const vladyslav = {
   },
   currentFocus: "Building next-gen DeFi protocols",
   location: "Poland 🇵🇱",
-  funFact: "I can turn coffee into code ☕➡️💻"
+  funFact: "I can turn coffee into code ☕➡️💻",
 };
 ```
 
 ---
 
+## 🌆 Commit Skyline
+
 <div align="center">
 
-## 🛠️ Technologies & Tools
-
-<!-- Animated Tech Stack -->
-<img src="https://skillicons.dev/icons?i=ts,js,nodejs,nestjs,react,vue,next,nuxt&theme=dark" />
-<br/>
-<img src="https://skillicons.dev/icons?i=solidity,graphql,postgres,mongodb,redis,docker,aws,github&theme=dark" />
-
-<!-- Custom Animated Badges -->
-<p>
-  <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" />
-  <img src="https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white" />
-  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
-  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" />
-  <img src="https://img.shields.io/badge/Solidity-363636?style=for-the-badge&logo=solidity&logoColor=white" />
-  <img src="https://img.shields.io/badge/GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white" />
-</p>
+<img src="https://raw.githubusercontent.com/Aciila/Aciila/output/commit-skyline.svg" alt="Commit Skyline" />
 
 </div>
 
 ---
 
-## 🐍 Contribution Snake Animation
+## 🪐 Tech Orbit
 
 <div align="center">
 
-  <!-- Snake Animation -->
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Aciila/Aciila/output/github-contribution-grid-snake-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Aciila/Aciila/output/github-contribution-grid-snake.svg">
-    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/Aciila/Aciila/output/github-contribution-grid-snake.svg">
-  </picture>
+<img src="https://raw.githubusercontent.com/Aciila/Aciila/output/tech-orbit.svg" alt="Tech Orbit" />
 
 </div>
 
 ---
 
-## 🏆 GitHub Trophies
+## 📊 Activity Pulse Timeline
 
 <div align="center">
-  
-  <img src="https://github-profile-trophy.vercel.app/?username=Aciila&theme=radical&no-frame=true&no-bg=false&margin-w=4&row=1" />
+
+<img src="https://raw.githubusercontent.com/Aciila/Aciila/output/activity-pulse.svg" alt="Activity Pulse Timeline" />
 
 </div>
 
 ---
 
-## 🎯 Current Focus
-
-<div align="center">
-
-```mermaid
-%%{init: {'theme':'base', 'themeVariables': { 'primaryColor': '#58a6ff', 'primaryTextColor': '#ffffff', 'primaryBorderColor': '#30363d', 'lineColor': '#58a6ff', 'sectionBkgColor': '#21262d', 'altSectionBkgColor': '#30363d', 'gridColor': '#58a6ff', 'textColor': '#ffffff', 'secondaryColor': '#238636', 'tertiaryColor': '#f85149', 'background': '#0d1117', 'secondaryTextColor': '#ffffff', 'mainBkg': '#21262d', 'secondBkg': '#30363d', 'tertiaryBkg': '#161b22'}}}%%
-mindmap
-  root((Vladyslav))
-    DeFi Protocols
-      Smart Contracts
-      Yield Farming
-      AMM Development
-    Backend Architecture
-      Microservices
-      GraphQL APIs
-      Real-time Systems
-    Blockchain Tech
-      Web3 Integration
-      Cross-chain Bridges
-    Mentoring
-      Junior Developers
-      Code Reviews
-      Best Practices
-```
-
-</div>
-
----
-
-## 🌐 Let's Connect!
+## Let's Connect!
 
 <div align="center">
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/vladyslav-buzhenko-a595311a8)
-[![Website](https://img.shields.io/badge/Website-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white)](https://Aciila.github.io)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:vlad.byjik@gmail.com)
 
 <!-- Animated Contact Info -->
@@ -129,17 +81,6 @@ mindmap
     <img src="https://img.shields.io/badge/-vlad.byjik@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:vlad.byjik@gmail.com" />
   </a>
 </p>
-
-</div>
-
----
-
-## 📈 Activity Graph
-
-<div align="center">
-
-<!-- Activity Graph -->
-[![Vladyslav's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=Aciila&theme=react-dark&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
 
 </div>
 
@@ -158,21 +99,12 @@ mindmap
 <img src="https://media.giphy.com/media/LmNwrBhejkK9EFP504/giphy.gif" width="200" align="right">
 
 - 🔗 Exploring new blockchain protocols
-- 🌱 Learning cutting-edge Web3 technologies  
+- 🌱 Learning cutting-edge Web3 technologies
 - 📚 Reading about DeFi innovations
 - 🏃‍♂️ Staying active and healthy
 - 🌍 Traveling and meeting new people
 
 <br clear="right"/>
-
----
-
-<!-- GitHub Metrics -->
-<div align="center">
-
-![Metrics](https://metrics.lecoq.io/Aciila?template=classic&base.header=0&base.activity=0&base.community=0&base.repositories=0&base.metadata=0&languages=1&languages.limit=8&languages.threshold=0%25&languages.colors=github&languages.sections=most-used&languages.indepth=false&languages.analysis.timeout=15&languages.categories=markup%2C%20programming&languages.recent.categories=markup%2C%20programming&languages.recent.load=300&languages.recent.days=14&config.timezone=Europe%2FWarsaw)
-
-</div>
 
 ---
 

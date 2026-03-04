@@ -1,39 +1,36 @@
-name: Generate Snake Animation
+name: Generate Profile Visuals
 
 on:
-  # Запуск щодня о 00:00 UTC
   schedule:
-    - cron: "0 0 * * *"
-  
-  # Дозволити ручний запуск
+    - cron: "0 */6 * * *"
+
   workflow_dispatch:
-  
-  # Запуск при push в main
+
   push:
     branches:
-    - main
+      - main
+      - master
 
 jobs:
-  generate:
+  generate-visuals:
     permissions:
       contents: write
     runs-on: ubuntu-latest
-    timeout-minutes: 5
-    
+    timeout-minutes: 10
+
     steps:
-      # Генерація анімації змійки
-      - name: Generate github-contribution-grid-snake.svg
-        uses: Platane/snk/svg-only@v3
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
-          github_user_name: Aciila
-          outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+          python-version: "3.11"
+
+      - name: Generate animated profile SVGs
+        run: python scripts/generate_profile_visuals.py
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          
-      # Публікація до гілки output
-      - name: Push github-contribution-grid-snake.svg to output branch
+          PROFILE_USERNAME: ${{ github.repository_owner }}
+
+      - name: Publish SVGs to output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
