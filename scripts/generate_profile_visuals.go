@@ -98,10 +98,7 @@ func githubGraphQL(token, query string, variables map[string]any) (*graphQLRespo
 	return &out, nil
 }
 
-func fetchProfileData(user, token string) ([]contributionDay, map[string]int, int, error) {
-	toDate := time.Now().UTC().Truncate(time.Second)
-	fromDate := toDate.AddDate(0, 0, -730)
-
+func fetchContributionRange(user, token string, fromDate, toDate time.Time) ([]contributionDay, int, error) {
 	query := `
 query($login: String!, $from: DateTime!, $to: DateTime!) {
   user(login: $login) {
@@ -116,6 +113,54 @@ query($login: String!, $from: DateTime!, $to: DateTime!) {
         totalContributions
       }
     }
+  }
+}
+`
+
+	data, err := githubGraphQL(token, query, map[string]any{
+		"login": user,
+		"from": fromDate.Format(time.RFC3339),
+		"to":   toDate.Format(time.RFC3339),
+	})
+	if err != nil {
+		return nil, 0, err
+	}
+
+	days := make([]contributionDay, 0, 400)
+	for _, week := range data.Data.User.ContributionsCollection.ContributionCalendar.Weeks {
+		for _, d := range week.ContributionDays {
+			days = append(days, contributionDay{Date: d.Date, Count: d.ContributionCount})
+		}
+	}
+
+	total := data.Data.User.ContributionsCollection.ContributionCalendar.TotalContributions
+	return days, total, nil
+}
+
+func fetchProfileData(user, token string) ([]contributionDay, map[string]int, int, error) {
+	toDate := time.Now().UTC().Truncate(time.Second)
+	recentFrom := toDate.AddDate(0, 0, -364)
+	olderTo := recentFrom.Add(-time.Second)
+	olderFrom := olderTo.AddDate(0, 0, -364)
+
+	olderDays, olderTotal, err := fetchContributionRange(user, token, olderFrom, olderTo)
+	if err != nil {
+		return nil, nil, 0, err
+	}
+	recentDays, recentTotal, err := fetchContributionRange(user, token, recentFrom, toDate)
+	if err != nil {
+		return nil, nil, 0, err
+	}
+
+	days := make([]contributionDay, 0, len(olderDays)+len(recentDays))
+	days = append(days, olderDays...)
+	days = append(days, recentDays...)
+
+	total := olderTotal + recentTotal
+
+	langQuery := `
+query($login: String!) {
+  user(login: $login) {
     repositories(
       first: 100,
       ownerAffiliations: OWNER,
@@ -137,30 +182,20 @@ query($login: String!, $from: DateTime!, $to: DateTime!) {
 }
 `
 
-	data, err := githubGraphQL(token, query, map[string]any{
+	langData, err := githubGraphQL(token, langQuery, map[string]any{
 		"login": user,
-		"from": fromDate.Format(time.RFC3339),
-		"to":   toDate.Format(time.RFC3339),
 	})
 	if err != nil {
 		return nil, nil, 0, err
 	}
 
-	days := make([]contributionDay, 0, 800)
-	for _, week := range data.Data.User.ContributionsCollection.ContributionCalendar.Weeks {
-		for _, d := range week.ContributionDays {
-			days = append(days, contributionDay{Date: d.Date, Count: d.ContributionCount})
-		}
-	}
-
 	langSizes := map[string]int{}
-	for _, repo := range data.Data.User.Repositories.Nodes {
+	for _, repo := range langData.Data.User.Repositories.Nodes {
 		for _, edge := range repo.Languages.Edges {
 			langSizes[edge.Node.Name] += edge.Size
 		}
 	}
 
-	total := data.Data.User.ContributionsCollection.ContributionCalendar.TotalContributions
 	return days, langSizes, total, nil
 }
 
