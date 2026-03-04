@@ -21,14 +21,16 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          ref: main
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: "1.22"
 
       - name: Generate animated profile SVGs
-        run: python scripts/generate_profile_visuals.py
+        run: go run "$GITHUB_WORKSPACE/scripts/generate_profile_visuals.go"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PROFILE_USERNAME: ${{ github.repository_owner }}
