@@ -139,7 +139,7 @@ query($login: String!, $from: DateTime!, $to: DateTime!) {
 
 func fetchProfileData(user, token string) ([]contributionDay, map[string]int, int, error) {
 	toDate := time.Now().UTC().Truncate(time.Second)
-	fromDate := toDate.AddDate(0, 0, -179)
+	fromDate := toDate.AddDate(0, 0, -364)
 
 	days, total, err := fetchContributionRange(user, token, fromDate, toDate)
 	if err != nil {
@@ -278,7 +278,7 @@ func generateCommitSkyline(days []contributionDay, total int, username string) s
   </defs>
   <rect width="100%%" height="100%%" fill="url(#sky)"/>
   <text x="36" y="44" class="title">Commit Skyline</text>
-  <text x="36" y="66" class="sub">@%s • %d contributions in the last 180 days</text>
+  <text x="36" y="66" class="sub">@%s • %d contributions in the last year</text>
   <rect x="0" y="250" width="100%%" height="70" fill="#071224"/>
   %s
   %s
