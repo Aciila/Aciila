@@ -1,0 +1,25 @@
+<svg viewBox="0 0 960 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Tech orbit">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#141c33"/>
+      <stop offset="100%" stop-color="#080d1c"/>
+    </radialGradient>
+    <style>
+      .title { font: 700 24px monospace; fill: #e6efff; }
+      .sub { font: 500 13px monospace; fill: #9cb2df; }
+      .core { fill: #1f4a8a; stroke: #8ebeff; stroke-width: 2; animation: pulse 3s ease-in-out infinite; }
+      .path { fill: none; stroke: #2b3f65; stroke-width: 1.1; opacity: .7; }
+      .orb { filter: drop-shadow(0 0 6px rgba(124,189,255,.4)); transform-origin: 480px 190px; animation: orbit 13s linear infinite; }
+      .label { font: 500 11px monospace; fill: #bfd4ff; }
+      @keyframes orbit { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+      @keyframes pulse { 0%,100% { r: 44; } 50% { r: 50; } }
+    </style>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#bg)"/>
+  <text x="36" y="44" class="title">Tech Orbit</text>
+  <text x="36" y="66" class="sub">Top languages from owned repositories • @Aciila</text>
+  <circle class="orb" cx="660.0" cy="190.0" r="14" fill="#61dafb" style="animation-delay:0.00s"/><ellipse class="path" cx="480" cy="190" rx="105.0" ry="47.2" transform="rotate(0 480 190)"/><circle class="orb" cx="627.1" cy="257.9" r="14" fill="#f7df1e" style="animation-delay:0.23s"/><ellipse class="path" cx="480" cy="190" rx="129.0" ry="58.1" transform="rotate(22 480 190)"/><circle class="orb" cx="480.0" cy="300.0" r="13" fill="#3178c6" style="animation-delay:0.46s"/><ellipse class="path" cx="480" cy="190" rx="153.0" ry="68.9" transform="rotate(44 480 190)"/><circle class="orb" cx="332.9" cy="248.0" r="8" fill="#9cdbff" style="animation-delay:0.69s"/><ellipse class="path" cx="480" cy="190" rx="105.0" ry="47.2" transform="rotate(66 480 190)"/><circle class="orb" cx="300.0" cy="190.0" r="8" fill="#00d8ff" style="animation-delay:0.92s"/><ellipse class="path" cx="480" cy="190" rx="129.0" ry="58.1" transform="rotate(88 480 190)"/><circle class="orb" cx="332.9" cy="112.2" r="8" fill="#c678dd" style="animation-delay:1.15s"/><ellipse class="path" cx="480" cy="190" rx="153.0" ry="68.9" transform="rotate(110 480 190)"/><circle class="orb" cx="480.0" cy="108.0" r="8" fill="#ff9e64" style="animation-delay:1.38s"/><ellipse class="path" cx="480" cy="190" rx="105.0" ry="47.2" transform="rotate(132 480 190)"/><circle class="orb" cx="627.1" cy="122.1" r="7" fill="#5fd3bc" style="animation-delay:1.61s"/><ellipse class="path" cx="480" cy="190" rx="129.0" ry="58.1" transform="rotate(154 480 190)"/>
+  <circle class="core" cx="480" cy="190" r="44"/>
+  <text x="480" y="195" text-anchor="middle" style="font:700 12px monospace; fill:#d9ebff;">CORE</text>
+  <text class="label" x="660.0" y="219.0" text-anchor="middle">HTML</text><text class="label" x="627.1" y="286.9" text-anchor="middle">JavaScript</text><text class="label" x="480.0" y="328.0" text-anchor="middle">TypeScript</text><text class="label" x="332.9" y="271.0" text-anchor="middle">SCSS</text><text class="label" x="300.0" y="213.0" text-anchor="middle">CSS</text><text class="label" x="332.9" y="135.2" text-anchor="middle">Go</text><text class="label" x="480.0" y="131.0" text-anchor="middle">Sass</text><text class="label" x="627.1" y="144.1" text-anchor="middle">Java</text>
+</svg>
